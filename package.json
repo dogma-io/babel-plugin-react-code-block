@@ -1,0 +1,64 @@
+{
+  "name": "babel-plugin-react-code-block",
+  "version": "0.0.1",
+  "description": "Display React functional examples with source code.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "nodely -s ./src -o ./lib",
+    "postpublish": "codecov",
+    "prepublishOnly": "npm run build",
+    "test": "lintly src && flow && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dogma-io/vmdom.git"
+  },
+  "keywords": [
+    "babel",
+    "block",
+    "code",
+    "example",
+    "plugin",
+    "react",
+    "source"
+  ],
+  "author": "Matthew Dahl <https://github.com/dogma-io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dogma-io/vmdom/issues"
+  },
+  "homepage": "https://github.com/dogma-io/vmdom#readme",
+  "devDependencies": {
+    "codecov": "3.0.0",
+    "flow-bin": "0.63.1",
+    "jest-cli": "22.0.4",
+    "lintly": "0.0.16",
+    "nodely": "0.0.21"
+  },
+  "dependencies": {
+    "prettier": "^1.9.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/__tests__/**/*.js"
+    ],
+    "coverageReporters": [
+      "json-summary",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testRegex": "/__tests__/.*-test\\.js$"
+  }
+}
