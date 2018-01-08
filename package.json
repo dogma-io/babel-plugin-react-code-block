@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-code-block",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Display React functional examples with source code.",
   "main": "lib/index.js",
   "files": [
@@ -10,7 +10,7 @@
     "build": "nodely -s ./src -o ./lib",
     "postpublish": "codecov",
     "prepublishOnly": "npm run build",
-    "test": "lintly src && flow && jest"
+    "test": "lintly src && flow && npm run build && jest"
   },
   "repository": {
     "type": "git",
@@ -32,11 +32,16 @@
   },
   "homepage": "https://github.com/dogma-io/vmdom#readme",
   "devDependencies": {
+    "@babel/core": "7.0.0-beta.36",
+    "@babel/preset-env": "7.0.0-beta.36",
+    "@babel/preset-react": "7.0.0-beta.36",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "22.0.4",
     "codecov": "3.0.0",
     "flow-bin": "0.63.1",
     "jest-cli": "22.0.4",
     "lintly": "0.0.16",
-    "nodely": "0.0.21"
+    "nodely": "0.0.22"
   },
   "dependencies": {
     "prettier": "^1.9.2"
@@ -44,8 +49,7 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/**/__tests__/**/*.js"
+      "lib/**/*.js"
     ],
     "coverageReporters": [
       "json-summary",
