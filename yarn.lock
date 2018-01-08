@@ -1352,9 +1352,9 @@ escodegen@^1.9.0:
   optionalDependencies:
     source-map "~0.5.6"
 
-eslint-config-lintly@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-lintly/-/eslint-config-lintly-0.0.2.tgz#c2b244d3af69fb2fa7329cb3b6e7d575f27521a2"
+eslint-config-lintly@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-lintly/-/eslint-config-lintly-0.0.3.tgz#a5b4f1deaef425870b718f46c9a6212a3e67c81c"
   dependencies:
     babel-eslint "8.1.2"
     eslint-config-standard "11.0.0-beta.0"
@@ -1450,9 +1450,9 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@4.14.0:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.14.0.tgz#96609768d1dd23304faba2d94b7fefe5a5447a82"
+eslint@4.15.0:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.15.0.tgz#89ab38c12713eec3d13afac14e4a89e75ef08145"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -2616,12 +2616,12 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lintly@0.0.16:
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/lintly/-/lintly-0.0.16.tgz#b8fc12d1e09f763da75ff514681594f4d2bc34be"
+lintly@0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/lintly/-/lintly-0.0.18.tgz#b02da730bd30f6b91de1b61ebfa8704850b68344"
   dependencies:
-    eslint "4.14.0"
-    eslint-config-lintly "0.0.2"
+    eslint "4.15.0"
+    eslint-config-lintly "0.0.3"
 
 load-json-file@^1.0.0:
   version "1.1.0"

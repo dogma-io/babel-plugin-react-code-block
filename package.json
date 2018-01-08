@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-code-block",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Display React functional examples with source code.",
   "main": "lib/index.js",
   "files": [
@@ -40,7 +40,7 @@
     "codecov": "3.0.0",
     "flow-bin": "0.63.1",
     "jest-cli": "22.0.4",
-    "lintly": "0.0.16",
+    "lintly": "0.0.18",
     "nodely": "0.0.22"
   },
   "dependencies": {
