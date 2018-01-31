@@ -8,6 +8,7 @@ module.exports = {
         },
       },
     ],
+    '@babel/flow',
     '@babel/react',
   ],
 }
