@@ -1,3 +1,7 @@
+/**
+ * @flow
+ */
+
 const prettier = require('prettier')
 
 module.exports = ({types: t, template}: *, options: *): * => {
