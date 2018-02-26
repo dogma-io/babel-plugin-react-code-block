@@ -2,6 +2,13 @@
 
 Display React functional examples with source code.
 
+## Table of Contents
+
+*   [Installation](#installation)
+*   [Documentation](#documentation)
+*   [Contributing](#contributing)
+*   [License](#license)
+
 ## Installation
 
 **npm**
@@ -16,7 +23,7 @@ npm install babel-plugin-react-code-block
 yarn add babel-plugin-react-code-block
 ```
 
-## Usage
+## Documentation
 
 Create a code block component with a `code` property, which will be populated by this plugin:
 ```js
@@ -49,6 +56,14 @@ module.exports = {
 ```
 
 > Note: In the above configuration change `CodeBlock` to the name of your code block component. This plugin will simply apply the transform to any JSX elements matching the component name.
+
+## Contributing
+
+Please see the [contributing guide](CONTRIBUTING.md).
+
+## License
+
+[MIT](LICENSE.md)
 
 [cov-img]: https://img.shields.io/codecov/c/github/dogma-io/babel-plugin-react-code-block.svg "Code Coverage"
 [cov-url]: https://codecov.io/gh/dogma-io/babel-plugin-react-code-block
