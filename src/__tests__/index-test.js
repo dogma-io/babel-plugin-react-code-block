@@ -6,7 +6,7 @@ function t(code, options) {
   return transform(code, {
     plugins: [[require('../../lib/'), options]],
     presets: ['@babel/env', '@babel/react'],
-  })
+  }).code
 }
 
 describe('babel-plugin-react-code-block', () => {

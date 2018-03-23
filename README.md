@@ -6,6 +6,7 @@ Display React functional examples with source code.
 
 *   [Installation](#installation)
 *   [Documentation](#documentation)
+*   [Code of Conduct](#code-of-conduct)
 *   [Contributing](#contributing)
 *   [License](#license)
 
@@ -56,6 +57,10 @@ module.exports = {
 ```
 
 > Note: In the above configuration change `CodeBlock` to the name of your code block component. This plugin will simply apply the transform to any JSX elements matching the component name.
+
+## Code of Conduct
+
+Please see the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Contributing
 

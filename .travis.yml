@@ -1,0 +1,36 @@
+language: node_js
+
+node_js:
+  - stable
+  - '8'
+  - '6'
+
+sudo: false
+
+env:
+  global:
+    secure: geSrK+9zsDvSzLhr9q1SB+b/NMkCKeFj1v8OlEqCqiX13FZyVoGIVXlyU9BWW/eQ68wJfccZpBsuS81UaegP5LJHz0w0gnxD0BIRFFzl38CrPR/HqOBF1bnEoc8iF+9ydq7u3Fgp2O9hyyf0hoiPs55FjD/8a7gNdile5JBT+MFjjQACIas5h9TW8tY5HetiPOp4eQ80SZEhBUOBSSvEwUgGpxfz1wM/bgvwDgbMejSTZYdliRO3ChfU69LukdOykx6AVIcWF7uEZca3jExtswWWGiwh0XuO/EaiY8ERnEq5VAAnwPfkacEeT0VRhW+Ocz8hC7gqfC8oaX8HINbQhTarYLyvX1x5N/ujAAgFKQU1frAwSqudZXmipWQNCapK0FcCqPBYbR+1c2mYZ5oWg8acWamF6v3YEdYsXnVakieGY/8aREV7gJRlxadDgx/cWL/RdPvrt3IqYcY5SazBOkQHuLvVXZIk48eewWYzMLbtkuKtuOvTXLMmCKvLKyVvTyq7fkyp0CvO0uVFvdb7CHTb8+/HJkQzq0fS4zXWOjswHBHWwwedlAuKS7HjcW9Yos226MUzXfuNQzAPw7tDYwcw5lRIXTnWHBReuUi/VSHk4pVeutoKZGJ5sL+Bz5t7eCoqAZugtJFN3aziHZ9lGWXGn764M/qsMS1dU2KkA90=
+
+before_install:
+  - npm install -g pr-bumper@^3.0.0
+
+install:
+  - yarn install
+
+before_script:
+  - $(npm root -g)/pr-bumper/.travis/maybe-check-scope.sh
+
+script:
+  - $(npm root -g)/pr-bumper/.travis/maybe-test.sh
+  - $(npm root -g)/pr-bumper/.travis/maybe-bump-version.sh
+
+deploy:
+  provider: npm
+  email: dogmaiobot@gmail.com
+  skip_cleanup: true
+  on:
+    all_branches: true
+    node: '8'
+    tags: true
+  api_key:
+    secure: JUNwb7zyXqGDMWInH/UZ8KBoSuaTK0deOeXlc2pT9J6Cnr1x28p7YOqN2Aaz9iz94zUMX/G4nb7cu+R8GUYDzCRQUY6A/CYODHp2diWFtKRG8Te2wak20sIxa13N4e8+i1KW5g9wSKb4T/JiK+COW5wu2PAsw47x1lvvOECDd6Nu9M0FMW8fIzSpnVEbQHkRR/SmOdUOn4XyKc80lYhZ40Lgw+nk2SMzOmGVsMB92RX/C7SgdUO2EsJ5owu3we26lGsJLLebvCYVPLQva5TOWUaoJ47ZVvC6aHCvHqRYKQecqxef1xiE39l4TowoKzS5sY2cLG9qOe6CfjALHy+I5Wasj8kHdov8C9lfDpPXoFPO3aVKI4/zqtKoqqEDGZhn//tGoJPH3jRUMYj2gvDpBnEBNs17LGbz8jdkfcOsEthJM5l5lSIcCSdx1ztjM0Qc1ydx5OFCsc6DT/RnRYH8MlaMNjA3O9MQjYM7Bc7gjDdlguZDjSvxIbr7wQgUYFWEwCucEb2URK3K6E6Nm1ryAaCEQCDLORqK7RyxjmZhwPPc4z+wLBjCNAZogBxhnpH+fBOnmZTiCF17eRE6U3HwS1uZ+BVFlNdI0AN4pP8jhEt+WZQ5Eb59uCy7H7g7fejh+sxAYwjTyBqsRWgAbYcWpjaQmu6MPKGx2+Uw9j48Lbw=
