@@ -33,14 +33,17 @@
   "homepage": "https://github.com/dogma-io/vmdom#readme",
   "devDependencies": {
     "babel-core": "^7.0.0-0",
-    "babel-jest": "23.0.0-alpha.0",
+    "babel-jest": "22.4.3",
     "codecov": "3.0.0",
-    "jest-cli": "23.0.0-alpha.0",
-    "lintly": "0.1.0",
-    "nodely": "0.1.0"
+    "jest": "22.4.3",
+    "lintly": "0.1.1",
+    "nodely": "0.1.2"
   },
   "dependencies": {
     "prettier": "^1.9.2"
+  },
+  "engines": {
+    "node": ">= 6"
   },
   "jest": {
     "collectCoverage": true,
