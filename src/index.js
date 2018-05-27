@@ -4,7 +4,8 @@
 
 const prettier = require('prettier')
 
-module.exports = ({types: t, template}: *, options: *): * => {
+// eslint-disable-next-line flowtype/no-weak-types
+module.exports = ({types: t, template}: *, options: any): any => {
   if (typeof options.component !== 'string') {
     throw new TypeError(
       'babel-plugin-react-code-block expects component option to be present and to be a string',
@@ -23,7 +24,10 @@ module.exports = ({types: t, template}: *, options: *): * => {
             const {start} = children[0]
             const {end} = children[children.length - 1]
             const code = stats.file.code.slice(start, end)
-            const options = {}
+            // eslint-disable-next-line flowtype/no-weak-types
+            const options: Object = {
+              parser: 'babylon',
+            }
             const maxLineLengthAttribute = attributes.find(
               (attr: *): boolean => attr.name.name === 'maxLineLength',
             )
