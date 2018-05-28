@@ -255,6 +255,17 @@
     "@babel/helper-remap-async-to-generator" "7.0.0-beta.49"
     "@babel/plugin-syntax-async-generators" "7.0.0-beta.49"
 
+"@babel/plugin-proposal-class-properties@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.0.0-beta.49.tgz#527e90af75d23fd5e3bae1a218dc0a6d9236b5f1"
+  dependencies:
+    "@babel/helper-function-name" "7.0.0-beta.49"
+    "@babel/helper-member-expression-to-functions" "7.0.0-beta.49"
+    "@babel/helper-optimise-call-expression" "7.0.0-beta.49"
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+    "@babel/helper-replace-supers" "7.0.0-beta.49"
+    "@babel/plugin-syntax-class-properties" "7.0.0-beta.49"
+
 "@babel/plugin-proposal-object-rest-spread@7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.0.0-beta.49.tgz#6d0cd60f7a7bd7c444a371c4e9470bff02f5777c"
@@ -280,6 +291,12 @@
 "@babel/plugin-syntax-async-generators@7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-async-generators/-/plugin-syntax-async-generators-7.0.0-beta.49.tgz#50ee943002aedc9ab3a8d12292bd35dd9edb1df8"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+
+"@babel/plugin-syntax-class-properties@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-class-properties/-/plugin-syntax-class-properties-7.0.0-beta.49.tgz#6a14fa47ceaa32b53e14e6648326e52dab306904"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.49"
 
@@ -985,6 +1002,18 @@ babel-preset-jest@^23.0.1:
   dependencies:
     babel-plugin-jest-hoist "^23.0.1"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
+
+babel-preset-nodely@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-nodely/-/babel-preset-nodely-0.0.1.tgz#55953ad6af7105442136428ae5c84eec5dddea0e"
+  dependencies:
+    "@babel/core" "7.0.0-beta.49"
+    "@babel/plugin-proposal-class-properties" "7.0.0-beta.49"
+    "@babel/plugin-syntax-object-rest-spread" "7.0.0-beta.49"
+    "@babel/preset-env" "7.0.0-beta.49"
+    "@babel/preset-flow" "7.0.0-beta.49"
+    "@babel/preset-react" "7.0.0-beta.49"
+    freezly "^2.0.0"
 
 babel-register@^6.26.0:
   version "6.26.0"
@@ -2001,6 +2030,10 @@ fragment-cache@^0.2.1:
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
   dependencies:
     map-cache "^0.2.2"
+
+freezly@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/freezly/-/freezly-2.0.0.tgz#6c78a34b7cee4532e7b843d80f44287ef4c0248f"
 
 fs-minipass@^1.2.5:
   version "1.2.5"
@@ -3260,14 +3293,11 @@ node-watch@0.5.8:
   version "0.5.8"
   resolved "https://registry.yarnpkg.com/node-watch/-/node-watch-0.5.8.tgz#208d10f93afe2f24b3701c254f54c7552f90c905"
 
-nodely@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/nodely/-/nodely-0.4.0.tgz#9a7830f76fcd0dc3f0444f222e8267fcf7fa90ad"
+nodely@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/nodely/-/nodely-0.5.1.tgz#62396a8bf0e0ba5c2b83c4caee9413d2103d5c93"
   dependencies:
     "@babel/core" "7.0.0-beta.49"
-    "@babel/preset-env" "7.0.0-beta.49"
-    "@babel/preset-flow" "7.0.0-beta.49"
-    "@babel/preset-react" "7.0.0-beta.49"
     flow-bin "0.73.0"
     glob "7.1.2"
     mkdirp "0.5.1"
@@ -3695,8 +3725,8 @@ regenerator-runtime@^0.11.0:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
 regenerator-transform@^0.12.3:
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.12.3.tgz#459adfb64f6a27164ab991b7873f45ab969eca8b"
+  version "0.12.4"
+  resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.12.4.tgz#aa9b6c59f4b97be080e972506c560b3bccbfcff0"
   dependencies:
     private "^0.1.6"
 
