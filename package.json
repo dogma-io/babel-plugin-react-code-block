@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-code-block",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Display React functional examples with source code.",
   "main": "lib/index.js",
   "files": [
