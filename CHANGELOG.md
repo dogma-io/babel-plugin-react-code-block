@@ -1,3 +1,7 @@
+# 0.3.0 (2018-09-02)
+
+*   Upgrade dependencies.
+
 # 0.2.1 (2018-06-06)
 
 *   Make sure build is ES5.
