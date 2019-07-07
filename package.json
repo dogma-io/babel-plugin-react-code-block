@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dogma-io/vmdom.git"
+    "url": "git+ssh://git@github.com/dogma-io/babel-plugin-react-code-block.git"
   },
   "keywords": [
     "babel",
@@ -29,15 +29,16 @@
   "author": "Matthew Dahl <https://github.com/dogma-io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dogma-io/vmdom/issues"
+    "url": "https://github.com/dogma-io/babel-plugin-react-code-block/issues"
   },
-  "homepage": "https://github.com/dogma-io/vmdom#readme",
+  "homepage": "https://github.com/dogma-io/babel-plugin-react-code-block#readme",
   "devDependencies": {
+    "@babel/core": "7.5.0",
     "babel-core": "^7.0.0-0",
-    "babel-jest": "23.4.2",
-    "babel-preset-nodely": "0.3.0",
-    "codecov": "3.0.4",
-    "jest": "23.5.0",
+    "babel-jest": "24.8.0",
+    "babel-preset-nodely": "0.4.1",
+    "codecov": "3.5.0",
+    "jest": "24.8.0",
     "lintly": "0.3.0",
     "nodely": "0.8.0"
   },
