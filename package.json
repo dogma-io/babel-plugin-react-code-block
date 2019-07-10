@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/dogma-io/babel-plugin-react-code-block#readme",
   "devDependencies": {
-    "@babel/core": "7.5.0",
+    "@babel/core": "7.5.4",
     "babel-core": "^7.0.0-0",
     "babel-jest": "24.8.0",
     "babel-preset-nodely": "0.4.1",
